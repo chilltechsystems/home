@@ -5,10 +5,10 @@ import chillTectLogo from "./assets/chilltechlogo.png";
 const NavMenu = () => {
   return (
     <>
-      <a href="#" className="text-gray-700  px-4 hover:text-gray-900">
+      <a href="/" className="text-gray-700  px-4 hover:text-gray-900">
         About
       </a>
-      <a href="#" className="text-gray-700  px-4 hover:text-gray-900">
+      <a href="/" className="text-gray-700  px-4 hover:text-gray-900">
         Services
       </a>
     </>
@@ -25,8 +25,12 @@ const Nav = () => {
             <div className="flex gap-8">
               {/* logo */}
               <div className="flex justify-center items-center">
-                <a href="#" className="text-gray-700">
-                  <img className="h-16 w-32" src={chillTectLogo}></img>
+                <a href="/" className="text-gray-700">
+                  <img
+                    alt="logo"
+                    className="h-16 w-32"
+                    src={chillTectLogo}
+                  ></img>
                 </a>
               </div>
               {/* primary nav */}
@@ -40,7 +44,7 @@ const Nav = () => {
                 Login
               </a> */}
               <a
-                href="#"
+                href="/"
                 className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 
                 rounded transition duration-500"
               >
