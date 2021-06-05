@@ -2,10 +2,10 @@ import React from "react";
 
 const Map = () => {
   return (
-    <div className="w-full md:w-1/2 h-full flex items-center">
+    <div className="w-full md:w-2/3 h-full flex items-center justify-center">
       <iframe
         title="map"
-        className="h-1/2"
+        className="h-2/3 max-w-sm md:max-w-full w-full"
         width="100%"
         frameBorder={0}
         scrolling="no"
