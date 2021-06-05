@@ -12,7 +12,7 @@ function App() {
           Chilltech Cooling Systems
         </h1>
       </div>
-      <div className="flex flex-row-reverse h-screen justify-between items-center bg-blue-600 p-10">
+      <div className="flex flex-col md:flex-row-reverse h-screen justify-between items-center bg-blue-600 p-10">
         <Map />
       </div>
       <div className="flex h-screen justify-center items-center bg-blue-400 p-10">
