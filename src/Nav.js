@@ -84,7 +84,7 @@ const Nav = () => {
 
         {/* mobile menu */}
         <div
-          className={classnames("flex flex-col", {
+          className={classnames("flex flex-col md:hidden", {
             hidden: !isMenuOpen,
           })}
         >
