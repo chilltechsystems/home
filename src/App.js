@@ -11,6 +11,26 @@ function App() {
           Chilltech Cooling Systems
         </h1>
       </div>
+      <div className="flex h-screen justify-center items-center bg-blue-500 p-10">
+        <h1 className="text-white font-bold text-5xl">
+          Chilltech Cooling Systems
+        </h1>
+      </div>
+      <div className="flex h-screen justify-center items-center bg-blue-400 p-10">
+        <h1 className="text-white font-bold text-5xl">
+          Chilltech Cooling Systems
+        </h1>
+      </div>
+      <div className="flex h-screen justify-center items-center bg-blue-300 p-10">
+        <h1 className="text-white font-bold text-5xl">
+          Chilltech Cooling Systems
+        </h1>
+      </div>
+      <div className="flex h-screen justify-center items-center bg-blue-200 p-10">
+        <h1 className="text-white font-bold text-5xl">
+          Chilltech Cooling Systems
+        </h1>
+      </div>
     </div>
   );
 }
