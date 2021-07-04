@@ -15,7 +15,7 @@ function App() {
       <div className="flex flex-col md:flex-row-reverse h-screen justify-between items-center p-10">
         <Map />
       </div>
-      <div className="flex h-screen justify-center items-center p-10">
+      <div className="flex justify-center items-center p-10">
         <Services />
       </div>
       <div className="flex h-screen justify-center items-center p-10">
