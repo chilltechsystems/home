@@ -8,7 +8,7 @@ import { ThemeContext } from "./contexts/theme";
 // };
 
 const neumorphInner = (isDarkMode) => ({
-  borderRadius: "37px",
+  borderRadius: "5px",
   background: isDarkMode
     ? "linear-gradient(145deg, #283848, #2f4256)"
     : "linear-gradient(145deg, #d4d8d9, #fdffff)",
