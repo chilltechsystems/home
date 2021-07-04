@@ -89,6 +89,7 @@ const Nav = () => {
           className={classnames("flex flex-col md:hidden", {
             hidden: !isMenuOpen,
           })}
+          onClick={() => setIsMenuOpen(false)}
         >
           <NavMenu />
         </div>
