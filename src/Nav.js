@@ -6,13 +6,13 @@ const NavMenu = () => {
   return (
     <>
       <a
-        href="/"
+        href="#about"
         className="text-gray-700 font-bold py-5 px-4 hover:text-gray-900"
       >
         About
       </a>
       <a
-        href="/"
+        href="#services"
         className="text-gray-700 font-bold py-5 px-4 hover:text-gray-900"
       >
         Services
