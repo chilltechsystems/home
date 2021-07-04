@@ -3,7 +3,8 @@ import React from "react";
 const neumorphInner = {
   borderRadius: "37px",
   background: "#3b82f6",
-  boxShadow: "inset 13px 13px 26px #316ccc,inset -13px -13px 26px #4598ff",
+  boxShadow: `inset 6px 6px 12px #2d64bd,
+  inset -6px -6px 12px #49a0ff`,
 };
 
 const About = () => {

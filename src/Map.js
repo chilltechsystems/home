@@ -1,10 +1,10 @@
 import React from "react";
 
 const neumorphInner = {
-  borderRadius: "37px",
+  borderRadius: "4px",
   background: "#3b82f6",
-  boxShadow: `7px 7px 14px #3676e0,
-  -7px -7px 14px #408eff`,
+  boxShadow: `inset 6px 6px 12px #2d64bd,
+  inset -6px -6px 12px #49a0ff`,
 };
 
 const Map = () => {
