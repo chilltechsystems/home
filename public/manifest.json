@@ -1,0 +1,15 @@
+{
+    "name": "Chilltech CS",
+    "short_name": "Chilltech CS",
+    "start_url": "index.html",
+    "icons": [
+        {
+        "src": "https://preveenraj.com/static/media/profile.861fd434.png",
+        "sizes": "192x192",
+        "type": "image/png"
+        }
+        ],
+    "background_color": "#3E4EB8",
+    "display": "standalone",
+    "theme_color": "#2E3AA1"
+   }
