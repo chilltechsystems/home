@@ -3,18 +3,15 @@ import React from "react";
 const neumorphInner = {
   borderRadius: "37px",
   background: "#3b82f6",
-  boxShadow: "inset 13px 13px 26px #316ccc,inset -13px -13px 26px #4598ff",
+  boxShadow: `7px 7px 14px #3676e0,
+  -7px -7px 14px #408eff`,
 };
 
 const Tile = ({ title, services }) => {
   return (
-    <div
-      id="services"
-      style={neumorphInner}
-      className="p-4 px-8 h-96 space-y-10"
-    >
-      <div className="font-bold text-white ">{title}</div>
-      <ul className="h-full space-y-2 font-semibold text-lg text-gray-100">
+    <div style={neumorphInner} className="p-4 px-8 h-96 space-y-10">
+      <div className="font-bold text-white text-3xl">{title}</div>
+      <ul className="h-full space-y-2 font-semibold text-xl text-gray-100">
         {services?.map((service, index) => (
           <li key={index} className="flex gap-1 items-center">
             <svg
@@ -39,8 +36,8 @@ const Tile = ({ title, services }) => {
 
 const Services = () => {
   return (
-    <div className="h-full py-2 w-full space-y-2">
-      <div className="text-3xl font-semibold text-blue-100">
+    <div className="h-full py-2 w-full space-y-10">
+      <div className="text-5xl md:text-7xl font-semibold text-blue-100">
         Services we provide...
       </div>
       <div className="h-full grid grid-cols-1 md:grid-cols-3 gap-4">

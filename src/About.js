@@ -8,12 +8,8 @@ const neumorphInner = {
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className="h-5/6 w-full m-8 mt-16 p-4 lg:p-20"
-      style={neumorphInner}
-    >
-      <div className="h-1/6 lg:text-5xl font-bold text-blue-300 flex items-center">
+    <div className="h-5/6 w-full m-8 mt-16 p-4 lg:p-20" style={neumorphInner}>
+      <div className="h-1/6 text-3xl lg:text-5xl font-bold text-blue-300 flex items-center">
         About Us
       </div>
       <div className="h-5/6 overflow-auto">
