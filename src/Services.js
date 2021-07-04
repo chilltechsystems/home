@@ -1,15 +1,17 @@
 import React from "react";
 
 const neumorphInner = {
-  borderRadius: "37px",
-  background: "#3b82f6",
-  boxShadow: `7px 7px 14px #3676e0,
-  -7px -7px 14px #408eff`,
+  borderRadius: "8px",
+  background: `linear-gradient(145deg, #3575dd, #3f8bff)`,
+  boxShadow: `9px 9px 18px #2857a5`,
 };
 
 const Tile = ({ title, services }) => {
   return (
-    <div style={neumorphInner} className="p-4 px-8 h-96 space-y-10">
+    <div
+      style={neumorphInner}
+      className="p-4 px-8 h-96 space-y-10 border-2 border-gray-700"
+    >
       <div className="font-bold text-white text-3xl">{title}</div>
       <ul className="h-full space-y-2 font-semibold text-xl text-gray-100">
         {services?.map((service, index) => (
