@@ -13,7 +13,7 @@ const About = () => {
       <div className="h-1/6 text-3xl lg:text-5xl font-bold text-blue-300 flex items-center">
         About Us
       </div>
-      <div className="h-5/6 overflow-auto">
+      <div className="h-5/6 overflow-hidden">
         <div className="lg:text-3xl font-semibold text-gray-100 space-y-10">
           <p className="">
             There are many reasons to confidently choose Chilltech as your
