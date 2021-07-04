@@ -1,20 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "./contexts/theme";
 
-const neumorphInner = {
+const neumorphInner = (isDarkMode) => ({
   borderRadius: "37px",
-  background: "#3b82f6",
-  boxShadow: `inset 6px 6px 12px #2d64bd,
-  inset -6px -6px 12px #49a0ff`,
-};
+  background: isDarkMode
+    ? "linear-gradient(145deg, #283848, #2f4256)"
+    : "linear-gradient(145deg, #d4d8d9, #fdffff)",
+  boxShadow: isDarkMode
+    ? `inset 6px 6px 12px #1d2a36,
+  inset -6px -6px 12px #3b526a`
+    : `inset 6px 6px 12px #9ea1a1,
+  inset -6px -6px 12px #ffffff`,
+});
 
 const About = () => {
+  const [isDarkMode] = useContext(ThemeContext);
+
   return (
-    <div className="h-5/6 w-full m-8 mt-16 p-4 lg:p-20" style={neumorphInner}>
-      <div className="h-1/6 text-3xl lg:text-5xl font-bold text-blue-300 flex items-center">
+    <div
+      className="h-5/6 w-full m-8 mt-16 p-4 lg:p-20"
+      style={neumorphInner(isDarkMode)}
+    >
+      <div className="h-1/6 text-3xl lg:text-5xl font-bold text-blue-900 dark:text-blue-300 flex items-center">
         About Us
       </div>
       <div className="h-5/6 overflow-hidden">
-        <div className="lg:text-3xl font-semibold text-gray-100 space-y-10">
+        <div className="lg:text-3xl font-semibold text-primaryDark dark:text-gray-100 space-y-10">
           <p className="">
             There are many reasons to confidently choose Chilltech as your
             provider of cold room, Air conditioner, Refrigerator, Deep freezer,

@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "./contexts/theme";
 
-const neumorphInner = {
-  borderRadius: "8px",
-  background: `linear-gradient(145deg, #3575dd, #3f8bff)`,
-  boxShadow: `9px 9px 18px #2857a5`,
-};
+// const neumorphInner = {
+//   borderRadius: "8px",
+//   background: `linear-gradient(145deg, #3575dd, #3f8bff)`,
+//   boxShadow: `2px 2px 4px #2857a5`,
+// };
+
+const neumorphInner = (isDarkMode) => ({
+  borderRadius: "37px",
+  background: isDarkMode
+    ? "linear-gradient(145deg, #283848, #2f4256)"
+    : "linear-gradient(145deg, #d4d8d9, #fdffff)",
+  boxShadow: isDarkMode ? `2px 2px 4px #1d2a36` : `2px 2px 4px #9ea1a1`,
+});
 
 const Tile = ({ title, services }) => {
+  const [isDarkMode] = useContext(ThemeContext);
+
   return (
-    <div
-      style={neumorphInner}
-      className="p-4 px-8 h-96 space-y-10 border-2 border-gray-700"
-    >
-      <div className="font-bold text-white text-3xl">{title}</div>
-      <ul className="h-full space-y-2 font-semibold text-xl text-gray-100">
+    <div style={neumorphInner(isDarkMode)} className="p-4 px-8 h-96 space-y-10">
+      <div className="font-bold text-3xl">{title}</div>
+      <ul className="h-full space-y-2 font-semibold text-xl ">
         {services?.map((service, index) => (
           <li key={index} className="flex gap-1 items-center">
             <svg
@@ -39,10 +47,10 @@ const Tile = ({ title, services }) => {
 const Services = () => {
   return (
     <div className="h-full py-2 w-full space-y-10">
-      <div className="text-5xl md:text-7xl font-semibold text-blue-100">
+      <div className="text-5xl md:text-7xl font-semibold text-primaryDark dark:text-blue-100 ">
         Services we provide...
       </div>
-      <div className="h-full grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="h-full grid grid-cols-1 md:grid-cols-3 gap-4 text-primaryDark dark:text-blue-100">
         <Tile
           title={"AC Services"}
           services={[
