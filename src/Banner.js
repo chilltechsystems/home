@@ -1,7 +1,7 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-// import "./styles/carousel.css";
+import "./styles/carousel.css";
 
 import banner_1 from "./assets/banners/banner_1.jpg";
 import banner_2 from "./assets/banners/banner_2.jpg";
