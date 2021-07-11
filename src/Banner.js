@@ -40,7 +40,7 @@ function Banner() {
       swipeable={true}
       showStatus={false}
       showThumbs={false}
-      // showArrows={false}
+      showArrows={false}
       dynamicHeight={true}
     >
       {banners.map((banner) => {
