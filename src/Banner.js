@@ -42,6 +42,7 @@ function Banner() {
       showThumbs={false}
       showArrows={false}
       dynamicHeight={true}
+      showIndicators={false}
     >
       {banners.map((banner, index) => {
         return (
