@@ -31,7 +31,7 @@ const Nav = () => {
   return (
     <>
       {/* navbar goes here */}
-      <nav className="bg-primaryLight dark:bg-primaryDark fixed w-full">
+      <nav className="bg-primaryLight dark:bg-primaryDark fixed w-full z-50">
         <div className="pr-8 mx-auto">
           <div className="flex justify-between">
             <div className="flex gap-8">
