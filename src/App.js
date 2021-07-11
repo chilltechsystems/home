@@ -13,7 +13,7 @@ function App() {
   return (
     <div className={isDarkMode ? "dark" : ""}>
       <div className="bg-primaryLight dark:bg-primaryDark">
-        <div className="">
+        <div className="h-24">
           <Nav isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
         </div>
         {/* content goes here */}
