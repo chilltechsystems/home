@@ -28,6 +28,7 @@ const Nav = () => {
   const [isDarkMode, setDarkMode] = useContext(ThemeContext);
 
   const chillTechLogo = isDarkMode ? chillTechDark : chillTechLight;
+
   return (
     <>
       {/* navbar goes here */}
