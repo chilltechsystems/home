@@ -17,22 +17,8 @@
     <link rel="manifest" href="manifest.json" />
   </head>
   <body>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script type="text/babel">
-      if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-      navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-      });
-      });
-      }
-      </script>
   </body>
 
 </html>
