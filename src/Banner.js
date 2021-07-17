@@ -41,8 +41,12 @@ function Banner() {
     >
       {banners.map((banner, index) => {
         return (
-          <div key={index} className="relative flex h-full z-10">
-            <img alt={`img_${index + 1}`} className="" src={banner.src} />
+          <div key={index} className="relative flex z-10 h-36 md:h-auto">
+            <img
+              alt={`img_${index + 1}`}
+              className="object-scale-down"
+              src={banner.src}
+            />
             <p className="absolute top-1/3 left-4 font-bold text-xl w-1/2 md:text-5xl text-primaryDark dark:text-white">
               {banner.label}
             </p>

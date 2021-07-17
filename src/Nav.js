@@ -82,15 +82,6 @@ const Nav = () => {
                   </svg>
                 )}
               </div>
-              <a
-                href="https://wa.me/919539907670"
-                target="_blank"
-                rel="noreferrer"
-                className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 
-                rounded transition duration-500"
-              >
-                Enquire Now
-              </a>
             </div>
             {/* mobile button goes here */}
             <div className="md:hidden flex items-center">
@@ -155,15 +146,6 @@ const Nav = () => {
                 </svg>
               )}
             </div>
-            <a
-              href="https://wa.me/919539907670"
-              target="_blank"
-              rel="noreferrer"
-              className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 
-                rounded transition duration-500"
-            >
-              Enquire Now
-            </a>
           </div>
         </div>
       </nav>
