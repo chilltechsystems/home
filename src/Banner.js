@@ -3,11 +3,10 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "./styles/carousel.css";
 
-import banner_1 from "./assets/banners/banner_1.jpg";
-import banner_2 from "./assets/banners/banner_2.jpg";
-import banner_3 from "./assets/banners/banner_3.jpg";
-import banner_4 from "./assets/banners/banner_4.jpg";
-import banner_5 from "./assets/banners/banner_5.jpg";
+import banner_1 from "./assets/banners/banner_1.png";
+import banner_2 from "./assets/banners/banner_2.png";
+import banner_3 from "./assets/banners/banner_3.png";
+import banner_5 from "./assets/banners/banner_5.png";
 
 function Banner() {
   const banners = [
@@ -22,10 +21,6 @@ function Banner() {
     {
       label: "Services Ice Maker",
       src: banner_3,
-    },
-    {
-      label: "Services Window A/C",
-      src: banner_4,
     },
     {
       label: "Services Wall A/C",
@@ -48,7 +43,7 @@ function Banner() {
         return (
           <div key={index} className="relative flex h-full z-10">
             <img alt={`img_${index + 1}`} className="" src={banner.src} />
-            <p className="absolute top-1/3 left-4 font-bold text-xl w-1/2 md:text-5xl text-white">
+            <p className="absolute top-1/3 left-4 font-bold text-xl w-1/2 md:text-5xl text-primaryDark dark:text-white">
               {banner.label}
             </p>
           </div>
