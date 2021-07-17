@@ -43,15 +43,13 @@ function App() {
             </p>
           </a>
         </div>
-        <div
-          id="about"
-          className="flex h-screen justify-center items-center py-10"
-        >
+        <div id="about" className="flex h-screen justify-center items-center">
           <About />
         </div>
+        <div className="bg-attachedbanner flex justify-center items-center h-48 md:h-96 bg-fixed shadow-inner bg-no-repeat bg-top"></div>
         <div
           id="services"
-          className="pt-20 flex justify-center items-center p-10"
+          className="pt-10 flex justify-center items-center p-10"
         >
           <Services />
         </div>

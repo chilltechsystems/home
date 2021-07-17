@@ -10,6 +10,9 @@ module.exports = {
         secondary: "#3b82f6",
         whatsapp: "#075e54",
       },
+      backgroundImage: (theme) => ({
+        attachedbanner: "url('assets/attachedbanner.jpeg')",
+      }),
     },
   },
   variants: {
