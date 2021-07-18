@@ -21,26 +21,26 @@ const About = () => {
       className="h-5/6 w-full m-8 mt-16 p-4 lg:p-20"
       style={neumorphInner(isDarkMode)}
     >
-      <div className="h-1/6 text-3xl lg:text-5xl font-bold text-blue-900 dark:text-blue-300 flex items-center">
+      <div className="h-1/6 font-ubuntu text-3xl lg:text-5xl font-bold text-blue-900 dark:text-blue-300 flex items-center">
         About Us
       </div>
-      <div className="h-5/6 overflow-hidden">
+      <div className="h-5/6 overflow-y-scroll md:overflow-hidden font-lora">
         <div className="lg:text-3xl font-semibold text-primaryDark dark:text-gray-100 space-y-10">
           <p className="">
-            There are many reasons to confidently choose Chilltech as your
-            provider of cold room, Air conditioner, Refrigerator, Deep freezer,
-            Ice machine services both commercial and residential.{" "}
+            A renowned leader in the Air Conditioning, Cold room, Ice machine,
+            Refrigerator and Deep freezer services in Kottayam. We provide a
+            variety of services to accountably enhance the cooling services
+            across Kerala.{" "}
           </p>
           <p className="">
-            Chilltech is a trusted name in the field of air conditioning
-            installation, maintenance, and repair. We are proud of our
-            reputation for putting clients first and getting the job done right
-            the first time, every time.
+            We majorly focus on corrective maintenance, repairs, preventive
+            measures and installations of AC and other cooling equipments for
+            industrial, commercial and domestic customers.
           </p>
           <p className="">
-            Services right to your home or where you want us to. You also have
-            the option to pay by Cash on Delivery, from your E-wallets, or by
-            online payments using Internet banking, Credit cards or Debit cards.
+            It’s been a few months since Chilltech Cooling Systems has emerged
+            and we have already made a prominent name in the cooling service
+            industry.
           </p>
         </div>
       </div>

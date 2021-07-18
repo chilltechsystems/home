@@ -46,7 +46,7 @@ const Tile = ({ title, services }) => {
 
 const Services = () => {
   return (
-    <div className="h-full py-2 w-full space-y-10">
+    <div className="h-full py-2 w-full space-y-10 font-lora">
       <div className="text-5xl md:text-7xl font-semibold text-primaryDark dark:text-blue-100 ">
         Services we provide...
       </div>

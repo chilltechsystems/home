@@ -13,6 +13,10 @@ module.exports = {
       backgroundImage: (theme) => ({
         attachedbanner: "url('assets/attachedbanner.jpeg')",
       }),
+      fontFamily: {
+        lora: "'Lato', sans-serif",
+        ubuntu: "'Ubuntu', sans-serif",
+      },
     },
   },
   variants: {

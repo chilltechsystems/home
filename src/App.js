@@ -26,7 +26,7 @@ function App() {
             className="border-2 border-blue-500 dark:bg-yellow-100 hover:bg-yellow-300 hover:border-opacity-0 dark:hover:bg-yellow-200 text-whatsapp hover:text-yellow-800 
                 rounded-lg transition duration-500 text-xl font-bold animate-bounce flex justify-center items-center"
           >
-            <p className="py-2 px-3 ">Enquire Now</p>
+            <p className="py-2 px-3 font-lora">Enquire Now</p>
             <p className="py-2 pr-3 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,9 +56,9 @@ function App() {
         <div className="flex flex-col md:flex-row-reverse h-screen justify-between items-center py-10 md:p-10">
           <Map />
         </div>
-        <div className="flex h-screen justify-center items-center p-10">
+        {/* <div className="flex h-screen justify-center items-center p-10">
           <h1 className="font-bold text-5xl">Coming Soon...</h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );
