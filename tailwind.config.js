@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         lora: "'Lato', sans-serif",
         ubuntu: "'Ubuntu', sans-serif",
+        sourcesans: "'Source Sans Pro', sans-serif",
       },
     },
   },

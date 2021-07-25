@@ -3,8 +3,8 @@ import React from "react";
 const neumorphInner = {
   borderRadius: "4px",
   background: "#3b82f6",
-  boxShadow: `inset 6px 6px 12px #ecf0f1,
-  inset -6px -6px 12px #ecf0f1`,
+  boxShadow: `inset 6px 6px 12px,
+  inset -6px -6px 12px`,
 };
 
 const Map = () => {
@@ -19,7 +19,8 @@ const Map = () => {
         scrolling="no"
         marginHeight={0}
         marginWidth={0}
-        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=kidangoor&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+        loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.031662336047!2d76.6051746!3d9.6803639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae68709178764beb!2sChilltech%20Cooling%20Systems!5e0!3m2!1sen!2sin!4v1627212847280!5m2!1sen!2sin"
       />
     </div>
   );

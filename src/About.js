@@ -24,7 +24,7 @@ const About = () => {
       <div className="h-1/6 font-ubuntu text-3xl lg:text-5xl font-bold text-blue-900 dark:text-blue-300 flex items-center">
         About Us
       </div>
-      <div className="h-5/6 overflow-y-scroll md:overflow-hidden font-lora">
+      <div className="h-5/6 overflow-y-scroll md:overflow-hidden font-sourcesans">
         <div className="lg:text-3xl font-semibold text-primaryDark dark:text-gray-100 space-y-10">
           <p className="">
             A renowned leader in the Air Conditioning, Cold room, Ice machine,
