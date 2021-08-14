@@ -47,18 +47,24 @@ function App() {
           <About />
         </div>
         <div className="bg-attachedbanner flex justify-center items-center h-48 md:h-96 bg-fixed shadow-inner bg-no-repeat bg-top"></div>
-        <div
-          id="services"
-          className="pt-10 flex justify-center items-center p-10"
-        >
+        <div className="flex h-yoxl justify-center items-center p-10">
+          <iframe
+            title="google-reviews"
+            src="https://widget.taggbox.com/67920"
+            style={{
+              width: "100%",
+              height: "100%",
+              overflow: "auto",
+              border: "none",
+            }}
+          />
+        </div>
+        <div id="services" className="flex justify-center items-center p-10">
           <Services />
         </div>
         <div className="flex flex-col md:flex-row-reverse h-screen justify-between items-center py-10 md:p-10">
           <Map />
         </div>
-        {/* <div className="flex h-screen justify-center items-center p-10">
-          <h1 className="font-bold text-5xl">Coming Soon...</h1>
-        </div> */}
       </div>
     </div>
   );

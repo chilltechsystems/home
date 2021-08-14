@@ -18,6 +18,9 @@ module.exports = {
         ubuntu: "'Ubuntu', sans-serif",
         sourcesans: "'Source Sans Pro', sans-serif",
       },
+      height: {
+        yoxl: "512px",
+      },
     },
   },
   variants: {
