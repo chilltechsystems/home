@@ -11,25 +11,35 @@ import banner_5 from "./assets/banners/banner_5.png";
 function Banner() {
   const banners = [
     {
+      title: "DEEP FREEZER",
       heading: "Quality that is Guaranteed",
       description: "Freezer and Deep Freezer specialist",
       src: banner_1,
     },
     {
+      title: "REFRIGERATOR",
       heading: "A Professional Service",
       description: "With a personal touch",
       src: banner_2,
     },
     {
+      title: "ICE MACHINE",
       heading: "Keeping you cool, in every step",
       description:
         "Constantly striving to exceed each our client’s expectations",
       src: banner_3,
     },
     {
+      title: "WINDOW A/C",
+      heading: "Cost- effective cooling solutions",
+      description: "",
+      src: banner_3,
+    },
+    {
+      title: "SPLIT A/C",
       heading: "Cool Your Summer, Warm Your Winter",
       description:
-        "Wherever you want, we can set the room that you wish to cool.",
+        "A split Air conditioner consists of an outdoor and an indoor unit. The outdoor unit is installed on or near the exterior wall of the room that you wish to cool.",
       src: banner_5,
     },
   ];
@@ -47,18 +57,23 @@ function Banner() {
     >
       {banners.map((banner, index) => {
         return (
-          <div key={index} className="relative flex z-10 h-36 md:h-auto">
+          <div key={index} className="relative flex z-10 h-48 md:h-auto">
             <img
               alt={`img_${index + 1}`}
               className="object-scale-down"
               src={banner.src}
             />
-            <p className="absolute font-ubuntu top-1/4 md:top-1/3 left-4 font-bold text-lg md:text-5xl text-left w-1/2 text-blue-500 dark:text-yellow-200">
-              {banner.heading}
-            </p>
-            <p className="font-lora px-10 absolute top-3/4 md:top-2/3 left-0 md:left-4 font-semibold text-sm md:text-3xl text-left w-10/12 md:w-1/2 text-gray-400 dark:text-blue-100">
-              {banner.description}
-            </p>
+            <div className="absolute top-1/4 md:top-1/3 left-4 flex flex-col w-full md:pl-10 gap-1 md:gap-4">
+              <p className=" font-ubuntu font-bold text-xl md:text-5xl text-left text-white">
+                {banner.title}
+              </p>
+              <p className=" font-ubuntu font-bold text-sm md:text-2xl text-left w-6/12 md:w-full text-gray-400 ">
+                {banner.heading}
+              </p>
+              <p className="font-lora font-semibold text-xs md:text-lg text-left w-7/12 md:w-1/2 text-black opacity-50 ">
+                {banner.description}
+              </p>
+            </div>
           </div>
         );
       })}

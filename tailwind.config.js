@@ -8,7 +8,7 @@ module.exports = {
         primaryLight: "#ecf0f1",
         primaryDark: "#2c3e50",
         secondary: "#3b82f6",
-        whatsapp: "#075e54",
+        whatsapp: "#12edd4",
       },
       backgroundImage: (theme) => ({
         attachedbanner: "url('assets/attachedbanner.jpeg')",

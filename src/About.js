@@ -25,7 +25,7 @@ const About = () => {
         About Us
       </div>
       <div className="h-5/6 overflow-y-scroll md:overflow-hidden font-sourcesans">
-        <div className="lg:text-3xl font-semibold text-primaryDark dark:text-gray-100 space-y-10">
+        <div className="lg:text-xl font-semibold text-primaryDark dark:text-gray-100 space-y-4">
           <p className="">
             A renowned leader in the Air Conditioning, Cold room, Ice machine,
             Refrigerator and Deep freezer services in Kottayam. We provide a

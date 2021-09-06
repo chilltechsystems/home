@@ -6,6 +6,7 @@ import About from "./About";
 import Services from "./Services";
 import { ThemeContext } from "./contexts/theme";
 import Banner from "./Banner";
+import WelcomeBanner from "./WelcomeBanner";
 
 function App() {
   const [isDarkMode, setDarkMode] = useContext(ThemeContext);
@@ -17,7 +18,22 @@ function App() {
           <Nav isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
         </div>
         {/* content goes here */}
-        <div className="flex flex-col justify-between items-center gap-8">
+        <div
+          id="about"
+          className="flex h-48 md:h-64 justify-center items-center"
+        >
+          <WelcomeBanner />
+        </div>
+        <div
+          style={{
+            background: "#1e3c72" /* fallback for old browsers */,
+            background:
+              "-webkit-linear-gradient(to right, #2a5298, #1e3c72)" /* Chrome 10-25, Safari 5.1-6 */,
+            background:
+              "linear-gradient(to right, #2a5298, #1e3c72)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+          }}
+          className="flex flex-col justify-between items-center gap-8 border-t border-b border-blue-700 bg-blue-200 dark:bg-white"
+        >
           <Banner />
           <a
             href="https://wa.me/919539907670"
@@ -47,6 +63,9 @@ function App() {
           <About />
         </div>
         <div className="bg-attachedbanner flex justify-center items-center h-48 md:h-96 bg-fixed shadow-inner bg-no-repeat bg-top"></div>
+        <div id="services" className="flex justify-center items-center p-10">
+          <Services />
+        </div>
         <div className="flex h-yoxl justify-center items-center p-10">
           <iframe
             title="google-reviews"
@@ -59,9 +78,7 @@ function App() {
             }}
           />
         </div>
-        <div id="services" className="flex justify-center items-center p-10">
-          <Services />
-        </div>
+
         <div className="flex flex-col md:flex-row-reverse h-screen justify-between items-center py-10 md:p-10">
           <Map />
         </div>
