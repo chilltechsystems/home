@@ -27,8 +27,10 @@ function App() {
         <div
           style={{
             background: "#1e3c72" /* fallback for old browsers */,
+            // eslint-disable-next-line no-dupe-keys
             background:
               "-webkit-linear-gradient(to right, #2a5298, #1e3c72)" /* Chrome 10-25, Safari 5.1-6 */,
+            // eslint-disable-next-line no-dupe-keys
             background:
               "linear-gradient(to right, #2a5298, #1e3c72)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
           }}

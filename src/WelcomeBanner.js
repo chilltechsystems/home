@@ -4,7 +4,7 @@ import chillTechTabloidDark from "./assets/chillTechTabloidDark.png";
 import { ThemeContext } from "./contexts/theme";
 
 const WelcomeBanner = () => {
-  const [isDarkMode, setDarkMode] = useContext(ThemeContext);
+  const [isDarkMode] = useContext(ThemeContext);
 
   const chillTechTabloid = isDarkMode
     ? chillTechTabloidDark
