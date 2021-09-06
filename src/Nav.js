@@ -71,7 +71,7 @@ const Nav = () => {
                     fill="rgba(99,136,153,1)"
                   />
                 </svg>
-                <p className="text-gray-700 font-semibold text-xs m-1 hover:text-blue-800">
+                <p className="text-gray-700 dark:text-gray-200 font-semibold text-xs m-1 hover:text-blue-800">
                   9539907670
                 </p>
               </div>

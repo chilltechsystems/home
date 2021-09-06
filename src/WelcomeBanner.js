@@ -15,7 +15,7 @@ const WelcomeBanner = () => {
       <div className="flex justify-center">
         <img
           alt="logo"
-          className="h-48 w-full md:h-56 md:w-2/3"
+          className="h-48 w-full md:h-56 md:w-7/12"
           src={chillTechTabloid}
         ></img>
       </div>
