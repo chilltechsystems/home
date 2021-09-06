@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <div
-      className="h-5/6 w-full m-8 mt-16 p-4 lg:p-20"
+      className="h-5/6 w-full m-8 mt-16 p-4 flex flex-col gap-4 lg:p-20"
       style={neumorphInner(isDarkMode)}
     >
       <div className="h-1/6 font-ubuntu text-3xl lg:text-5xl font-bold text-blue-900 dark:text-blue-300 flex items-center">

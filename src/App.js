@@ -64,7 +64,7 @@ function App() {
             </p>
           </a>
         </div>
-        <div id="about" className="flex h-screen justify-center items-center">
+        <div id="about" className="flex h-auto justify-center items-center">
           <About />
         </div>
         <div className="bg-attachedbanner flex justify-center items-center h-48 md:h-96 bg-fixed shadow-inner bg-no-repeat bg-top"></div>
