@@ -7,6 +7,7 @@ import Services from "./Services";
 import { ThemeContext } from "./contexts/theme";
 import Banner from "./Banner";
 import WelcomeBanner from "./WelcomeBanner";
+import Summary from "./Summary";
 
 function App() {
   const [isDarkMode, setDarkMode] = useContext(ThemeContext);
@@ -24,19 +25,21 @@ function App() {
         >
           <WelcomeBanner />
         </div>
-        <div
-          style={{
-            background: "#1e3c72" /* fallback for old browsers */,
-            // eslint-disable-next-line no-dupe-keys
-            background:
-              "-webkit-linear-gradient(to right, #2a5298, #1e3c72)" /* Chrome 10-25, Safari 5.1-6 */,
-            // eslint-disable-next-line no-dupe-keys
-            background:
-              "linear-gradient(to right, #2a5298, #1e3c72)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
-          }}
-          className="flex flex-col justify-between items-center gap-8 border-t border-b border-blue-700 bg-blue-200 dark:bg-white"
-        >
-          <Banner />
+        <div className="flex flex-col justify-between items-center gap-8">
+          <div
+            style={{
+              background: "#1e3c72" /* fallback for old browsers */,
+              // eslint-disable-next-line no-dupe-keys
+              background:
+                "-webkit-linear-gradient(to right, #2a5298, #1e3c72)" /* Chrome 10-25, Safari 5.1-6 */,
+              // eslint-disable-next-line no-dupe-keys
+              background:
+                "linear-gradient(to right, #2a5298, #1e3c72)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
+            }}
+            className="border-t border-b border-blue-700 bg-blue-200 dark:bg-white"
+          >
+            <Banner />
+          </div>
           <a
             href="https://wa.me/919539907670"
             target="_blank"
@@ -83,6 +86,9 @@ function App() {
 
         <div className="flex flex-col md:flex-row-reverse h-screen justify-between items-center py-10 md:p-10">
           <Map />
+        </div>
+        <div className="bg-white dark:bg-gray-700 flex flex-col md:flex-row-reverse h-96 justify-between items-center py-10 md:p-10">
+          <Summary />
         </div>
       </div>
     </div>
