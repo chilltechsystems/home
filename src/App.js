@@ -41,7 +41,7 @@ function App() {
             href="https://wa.me/919539907670"
             target="_blank"
             rel="noreferrer"
-            className="border-2 border-blue-500 dark:bg-yellow-100 hover:bg-yellow-300 hover:border-opacity-0 dark:hover:bg-yellow-200 text-whatsapp hover:text-yellow-800 
+            className="border-2 border-blue-500  hover:bg-yellow-300 hover:border-opacity-0 text-whatsapp hover:text-yellow-800 
                 rounded-lg transition duration-500 text-xl font-bold animate-bounce flex justify-center items-center"
           >
             <p className="py-2 px-3 font-lora">Enquire Now</p>

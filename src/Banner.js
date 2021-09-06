@@ -57,7 +57,7 @@ function Banner() {
     >
       {banners.map((banner, index) => {
         return (
-          <div key={index} className="relative flex z-10 h-48 md:h-auto">
+          <div key={index} className="relative flex z-10 h-48 md:h-yoxl">
             <img
               alt={`img_${index + 1}`}
               className="object-scale-down"
