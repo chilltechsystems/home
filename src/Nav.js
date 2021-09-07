@@ -37,8 +37,8 @@ const Nav = () => {
           <div className="flex justify-between">
             <div className="flex gap-8">
               {/* logo */}
-              <div className="justify-center items-center hidden md:flex">
-                <a href="/" className="text-gray-700">
+              <div className="justify-center items-center flex">
+                <a href="/" className="text-gray-700 hidden md:block">
                   <img
                     alt="logo"
                     className="h-16 w-32"

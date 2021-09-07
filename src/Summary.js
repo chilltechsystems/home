@@ -21,7 +21,7 @@ const Summary = () => {
             />
           </svg>
 
-          <p className="text-lg text-gray-500 dark:text-gray-100">
+          <p className="text:base md:text-lg text-gray-500 dark:text-gray-100">
             Tharappel Tower, Highway Road Kidangoor, Kottayam - 686572
           </p>
         </div>
@@ -44,7 +44,7 @@ const Summary = () => {
             />
           </svg>
 
-          <p className="text-3xl text-gray-500 dark:text-gray-100">
+          <p className="text-xl md:text-3xl text-gray-500 dark:text-gray-100">
             9539907670
           </p>
         </div>
@@ -67,7 +67,7 @@ const Summary = () => {
             />
           </svg>
 
-          <p className="text-xl text-gray-500 dark:text-gray-100">
+          <p className="text-lg md:text-xl text-gray-500 dark:text-gray-100">
             chilltechcoollingsystems@gmail.com
           </p>
         </div>
