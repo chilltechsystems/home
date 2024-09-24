@@ -4,7 +4,7 @@ import Map from "./Map";
 import Nav from "./Nav";
 import About from "./About";
 import Services from "./Services";
-import { ThemeContext } from "./contexts/theme";
+import { ThemeContext } from "./contexts/theme.jsx";
 import Banner from "./Banner";
 import WelcomeBanner from "./WelcomeBanner";
 import Summary from "./Summary";
@@ -28,14 +28,11 @@ function App() {
         <div className="flex flex-col justify-between items-center gap-8">
           <div
             style={{
-              background: "#1e3c72" /* fallback for old browsers */,
-              // eslint-disable-next-line no-dupe-keys
-              background:
-                "-webkit-linear-gradient(to right, #2a5298, #1e3c72)" /* Chrome 10-25, Safari 5.1-6 */,
-              // eslint-disable-next-line no-dupe-keys
-              background:
-                "linear-gradient(to right, #2a5298, #1e3c72)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
-            }}
+              background: [
+                "#1e3c72", // fallback for old browsers
+                "-webkit-linear-gradient(to right, #2a5298, #1e3c72)", // Chrome 10-25, Safari 5.1-6
+                "linear-gradient(to right, #2a5298, #1e3c72)" // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+              ].join(", ")}}
             className="border-t border-b border-blue-700 bg-blue-200 dark:bg-white"
           >
             <Banner />

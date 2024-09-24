@@ -76,7 +76,9 @@ const Nav = () => {
                 </p>
               </div>
               <div
-                onClick={() => setDarkMode((prev) => !prev)}
+                onClick={() => {
+                  setDarkMode((prev) => !prev)
+                }}
                 className="cursor-pointer"
               >
                 {isDarkMode ? (

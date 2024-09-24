@@ -64,7 +64,7 @@ function Banner() {
               src={banner.src}
             />
             <div className="absolute top-1/4 md:top-1/3 left-4 flex flex-col w-full md:pl-10 gap-1 md:gap-4">
-              <p className=" font-ubuntu font-bold text-xl md:text-7xl text-left text-white">
+              <p className=" font-ubuntu font-bold text-xl md:text-7xl text-left text-white dark:text-gray-700">
                 {banner.title}
               </p>
               <p className=" font-ubuntu font-bold text-sm md:text-3xl text-left w-6/12 md:w-full text-gray-400 ">
