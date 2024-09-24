@@ -10,7 +10,7 @@ import { ThemeContext } from "./contexts/theme";
 const neumorphInner = (isDarkMode) => ({
   borderRadius: "5px",
   background: isDarkMode
-    ? "linear-gradient(145deg, #283848, #2f4256)"
+    ? "linear-gradient(145deg, #2c6aa7, #2f4256)"
     : "linear-gradient(145deg, #d4d8d9, #fdffff)",
   boxShadow: isDarkMode ? `2px 2px 4px #1d2a36` : `2px 2px 4px #9ea1a1`,
 });
@@ -20,8 +20,8 @@ const Tile = ({ title, services }) => {
 
   return (
     <div style={neumorphInner(isDarkMode)} className="p-4 px-8 h-96 space-y-10">
-      <div className="font-bold text-3xl">{title}</div>
-      <ul className="h-full space-y-2 font-semibold text-xl ">
+      <div className="font-bold text-3xl text-center">{title}</div>
+      <ul className="h-full space-y-2 font-semibold text-xl">
         {services?.map((service, index) => (
           <li key={index} className="flex gap-1 items-center">
             <svg
@@ -46,24 +46,24 @@ const Tile = ({ title, services }) => {
 
 const Services = () => {
   return (
-    <div className="h-full py-2 w-full space-y-10 font-sourcesans">
+    <div className="h-full py-2 w-full md:w-3/4 space-y-10 font-sourcesans">
       <div className="text-5xl md:text-7xl font-semibold font-lora text-primaryDark dark:text-blue-100 ">
         Services we provide...
       </div>
       <div className="h-full grid grid-cols-1 md:grid-cols-3 gap-4 text-primaryDark dark:text-blue-100">
         <Tile
-          title={"AC Services"}
+          title={"Air Conditioner"}
           services={[
-            "AC Repair service ",
-            "AC Installation service ",
-            "AC Uninstallation service ",
+            "AC Repair",
+            "AC Installation",
+            "AC Uninstallation",
             "AC Piping service",
             "AC Gas filling service",
             "AC AMC service",
           ]}
         />
         <Tile
-          title={"REFRIGERATOR SERVICES"}
+          title={"REFRIGERATOR"}
           services={[
             "Refrigerator Installation",
             "Refrigerator Servicing",
@@ -71,7 +71,7 @@ const Services = () => {
           ]}
         />
         <Tile
-          title={"ICE MACHINE SERVICES"}
+          title={"ICE MACHINE"}
           services={[
             "Ice machine Installation",
             "Ice machine Servicing",
@@ -79,7 +79,7 @@ const Services = () => {
           ]}
         />
         <Tile
-          title={"DEEP FREEZER SERVICES"}
+          title={"DEEP FREEZER"}
           services={[
             "Deep freezer Installation",
             "Deep freezer Servicing",
@@ -87,11 +87,19 @@ const Services = () => {
           ]}
         />
         <Tile
-          title={"CHILLER SERVICES"}
+          title={"CHILLER"}
           services={[
             "Chiller Installation",
             "Chiller Servicing",
             "Chiller Repairing",
+          ]}
+        />
+        <Tile
+          title={"WASHING MACHINE"}
+          services={[
+            "Washing machine Installation",
+            "Washing machine Servicing",
+            "Washing machine Repair",
           ]}
         />
       </div>
